@@ -1,0 +1,50 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-calls-for-users;get-list-of-users",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get list of users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I call GET on \"/api/users?page=2\"",
+            "match": {
+              "location": "tests\\stepDefinitions\\stepDefs.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I expect status code as \"200\"",
+            "match": {
+              "location": "tests\\stepDefinitions\\stepDefs.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-calls-for-users",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get calls for Users",
+    "tags": [],
+    "uri": "tests\\features\\getCall.feature"
+  }
+]
